@@ -36,7 +36,7 @@ Which solution will meet these requirements?
 Correct: C
 Community vote distribution  C (100%)
 
-Question #3Topic 1
+Question #3
 
 A company is adopting AWS CodeDeploy to automate its application deployments for a Java-Apache Tomcat application with an Apache Webserver. The development team started with a proof of concept, created a deployment group for a developer environment, and performed functional tests within the application. After completion, the team will create additional deployment groups for staging and production.
 
@@ -52,7 +52,7 @@ How can these requirements be met with the LEAST management overhead and without
 
 •	D. Create a script that uses the CodeDeploy environment variable DEPLOYMENT_GROUP_ID to identify which deployment group the instance is part of to configure the log level settings. Reference this script as part of the Install lifecycle hook in the appspec.yml file.
 
-Correct:B   
+**Correct:B   **
 Community vote distribution B (89%)
 
 Question #4Topic 1
