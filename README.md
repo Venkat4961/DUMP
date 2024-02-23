@@ -52,10 +52,10 @@ How can these requirements be met with the LEAST management overhead and without
 
 •	D. Create a script that uses the CodeDeploy environment variable DEPLOYMENT_GROUP_ID to identify which deployment group the instance is part of to configure the log level settings. Reference this script as part of the Install lifecycle hook in the appspec.yml file.
 
-**Correct:B   **
+Correct:B  
 Community vote distribution B (89%)
 
-Question #4Topic 1
+Question #4 
 
 A company requires its developers to tag all Amazon Elastic Block Store (Amazon EBS) volumes in an account to indicate a desired backup frequency. This requirement Includes EBS volumes that do not require backups. The company uses custom tags named Backup_Frequency that have values of none, dally, or weekly that correspond to the desired backup frequency. An audit finds that developers are occasionally not tagging the EBS volumes.
 
@@ -74,7 +74,7 @@ Which solution will meet these requirements?
 Correct Answer: B 🗳️
 Community vote distribution B (100%)
 
-Question #5Topic 1
+Question #5
 
 A company is using an Amazon Aurora cluster as the data store for its application. The Aurora cluster is configured with a single DB instance. The application performs read and write operations on the database by using the cluster's instance endpoint.
 
@@ -93,7 +93,7 @@ What should a DevOps engineer do to meet these requirements?
 Correct Answer: C 🗳️
 Community vote distribution A (66%) , C (22%)
 
-Question #6Topic 1
+Question #6
 
 A company must encrypt all AMIs that the company shares across accounts. A DevOps engineer has access to a source account where an unencrypted custom AMI has been built. The DevOps engineer also has access to a target account where an Amazon EC2 Auto Scaling group will launch EC2 instances from the AMI. The DevOps engineer must share the AMI with the target account.
 
@@ -116,7 +116,7 @@ Which additional steps should the DevOps engineer perform to meet the requiremen
 Correct Answer: ACD 🗳️
 Community vote distribution: ADF (94%)
 
-Question #7Topic 1
+Question #7
 
 A company uses AWS CodePipeline pipelines to automate releases of its application A typical pipeline consists of three stages build, test, and deployment. The company has been using a separate AWS CodeBuild project to run scripts for each stage. However, the company now wants to use AWS CodeDeploy to handle the deployment stage of the pipelines.
 
@@ -137,7 +137,7 @@ Which combination of steps should a DevOps engineer perform to meet these requir
 Correct Answer: AD 🗳️
 Community vote distribution: AD (100%)
 
-Question #8Topic 1
+Question #8
 
 A company’s security team requires that all external Application Load Balancers (ALBs) and Amazon API Gateway APIs are associated with AWS WAF web ACLs. The company has hundreds of AWS accounts, all of which are included in a single organization in AWS Organizations. The company has configured AWS Config for the organization. During an audit, the company finds some externally facing ALBs that are not associated with AWS WAF web ACLs.
 
@@ -156,7 +156,8 @@ Which combination of steps should a DevOps engineer take to prevent future viola
 Correct Answer: AC 🗳️
 Community vote distribution: AC (100%)
 
-Question #9Topic 1
+Question #9
+
 A company uses AWS Key Management Service (AWS KMS) keys and manual key rotation to meet regulatory compliance requirements. The security team wants to be notified when any keys have not been rotated after 90 days.
 
 Which solution will accomplish this?
@@ -173,7 +174,7 @@ Correct Answer: C 🗳️
 Community vote distribution
 C (100%)
 
-Question #10Topic 1
+Question #10
 
 A security review has identified that an AWS CodeBuild project is downloading a database population script from an Amazon S3 bucket using an unauthenticated request. The security team does not allow unauthenticated requests to S3 buckets for this project.
 
@@ -190,7 +191,7 @@ How can this issue be corrected in the MOST secure manner?
 Correct Answer: C 🗳️
 Community vote distribution C (100%)
 
-Question #11Topic 1
+Question #11
 
 An ecommerce company has chosen AWS to host its new platform. The company's DevOps team has started building an AWS Control Tower landing zone. The DevOps team has set the identity store within AWS IAM Identity Center (AWS Single Sign-On) to external identity provider (IdP) and has configured SAML 2.0.
 
@@ -213,7 +214,7 @@ Correct Answer: ABC 🗳️
 
 Community vote distribution BCF (100%)
 
-Question #12Topic 1
+Question #12
 
 An ecommerce company is receiving reports that its order history page is experiencing delays in reflecting the processing status of orders. The order processing system consists of an AWS Lambda function that uses reserved concurrency. The Lambda function processes order messages from an Amazon Simple Queue Service (Amazon SQS) queue and inserts processed orders into an Amazon DynamoDB table. The DynamoDB table has auto scaling enabled for read and write capacity.
 
@@ -233,7 +234,7 @@ Correct Answer: AD 🗳️
 
 Community vote distribution AD (100%)
 
-Question #13Topic 1
+Question #13
 
 A company has a single AWS account that runs hundreds of Amazon EC2 instances in a single AWS Region. New EC2 instances are launched and terminated each hour in the account. The account also includes existing EC2 instances that have been running for longer than a week.
 
@@ -255,7 +256,7 @@ Correct Answer: B 🗳️
 
 Community vote distribution B (100%)
 
-Question #14Topic 1
+Question #14
 
 A DevOps engineer is building a continuous deployment pipeline for a serverless application that uses AWS Lambda functions. The company wants to reduce the customer impact of an unsuccessful deployment. The company also wants to monitor for issues.
 
@@ -274,7 +275,7 @@ Correct Answer: A 🗳️
 
 Community vote distribution A (87%)
 
-Question #15Topic 1
+Question #15
 
 To run an application, a DevOps engineer launches an Amazon EC2 instance with public IP addresses in a public subnet. A user data script obtains the application artifacts and installs them on the instances upon launch. A change to the security classification of the application now requires the instances to run with no access to the internet. While the instances launch successfully and show as healthy, the application does not seem to be installed.
 
@@ -292,7 +293,7 @@ Correct Answer: C 🗳️
 
 Community vote distribution C (92%)
 
-Question #16Topic 1
+Question #16
 A development team is using AWS CodeCommit to version control application code and AWS CodePipeline to orchestrate software deployments. The team has decided to use a remote main branch as the trigger for the pipeline to integrate code changes. A developer has pushed code changes to the CodeCommit repository, but noticed that the pipeline had no reaction, even after 10 minutes.
 
 Which of the following actions should be taken to troubleshoot this issue?
@@ -310,7 +311,7 @@ A (56%)
 B (38%)
 6%
 
-Question #17Topic 1
+Question #17
 A company's developers use Amazon EC2 instances as remote workstations. The company is concerned that users can create or modify EC2 security groups to allow unrestricted inbound access.
 
 A DevOps engineer needs to develop a solution to detect when users create unrestricted security group rules. The solution must detect changes to security group rules in near real time, remove unrestricted rules, and send email notifications to the security team. The DevOps engineer has created an AWS Lambda function that checks for security group ID from input, removes rules that grant unrestricted access, and sends notifications through Amazon Simple Notification Service (Amazon SNS).
@@ -329,7 +330,8 @@ D. Create an Amazon EventBridge custom event bus that subscribes to events from 
 Correct Answer: C 🗳️
 C (100%)
 
-Question #18Topic 1
+Question #18
+
 A DevOps engineer is creating an AWS CloudFormation template to deploy a web service. The web service will run on Amazon EC2 instances in a private subnet behind an Application Load Balancer (ALB). The DevOps engineer must ensure that the service can accept requests from clients that have IPv6 addresses.
 What should the DevOps engineer do with the CloudFormation template so that IPv6 clients can access the web service?
 
@@ -342,7 +344,8 @@ Correct Answer: B 🗳️
 Community vote distribution
 D (100%)
 
-Question #19Topic 1
+Question #19
+
 A company uses AWS Organizations and AWS Control Tower to manage all the company's AWS accounts. The company uses the Enterprise Support plan.
 
 A DevOps engineer is using Account Factory for Terraform (AFT) to provision new accounts. When new accounts are provisioned, the DevOps engineer notices that the support plan for the new accounts is set to the Basic Support plan. The DevOps engineer needs to implement a solution to provision the new accounts with the Enterprise Support plan.
@@ -361,7 +364,8 @@ Correct Answer: D 🗳️
 Community vote distribution
 D (100%)
 
-Question #20Topic 1
+Question #20
+
 A company's DevOps engineer uses AWS Systems Manager to perform maintenance tasks during maintenance windows. The company has a few Amazon EC2 instances that require a restart after notifications from AWS Health. The DevOps engineer needs to implement an automated solution to remediate these notifications. The DevOps engineer creates an Amazon EventBridge rule.
 How should the DevOps engineer configure the EventBridge rule to meet these requirements?
 
@@ -378,7 +382,8 @@ Community vote distribution
 A (53%)
 C (41%)
 
-Question #21Topic 1
+Question #21
+
 A company has containerized all of its in-house quality control applications. The company is running Jenkins on Amazon EC2 instances, which require patching and upgrading. The compliance officer has requested a DevOps engineer begin encrypting build artifacts since they contain company intellectual property.
 
 What should the DevOps engineer do to accomplish this in the MOST maintainable manner?
@@ -395,7 +400,8 @@ Correct Answer: D 🗳️
 D (79%)
 B (21%)
 
-Question #22Topic 1
+Question #22
+
 An IT team has built an AWS CloudFormation template so others in the company can quickly and reliably deploy and terminate an application. The template creates an Amazon EC2 instance with a user data script to install the application and an Amazon S3 bucket that the application uses to serve static webpages while it is running.
 
 All resources should be removed when the CloudFormation stack is deleted. However, the team observes that CloudFormation reports an error during stack deletion, and the S3 bucket created by the stack is not deleted.
@@ -414,7 +420,8 @@ Correct Answer: B 🗳️
 Community vote distribution
 B (100%)
 
-Question #23Topic 1
+Question #23
+
 A company has an AWS CodePipeline pipeline that is configured with an Amazon S3 bucket in the eu-west-1 Region. The pipeline deploys an AWS Lambda application to the same Region. The pipeline consists of an AWS CodeBuild project build action and an AWS CloudFormation deploy action.
 
 The CodeBuild project uses the aws cloudformation package AWS CLI command to build an artifact that contains the Lambda function code’s .zip file and the CloudFormation template. The CloudFormation deploy action references the CloudFormation template from the output artifact of the CodeBuild project’s build action.
@@ -438,7 +445,8 @@ Community vote distribution
 CE (58%)
 AB (22%)
 
-Question #24Topic 1
+Question #24
+
 A company runs an application on one Amazon EC2 instance. Application metadata is stored in Amazon S3 and must be retrieved if the instance is restarted. The instance must restart or relaunch automatically if the instance becomes unresponsive.
 
 Which solution will meet these requirements?
@@ -455,7 +463,8 @@ Correct Answer: B 🗳️
 Community vote distribution
 B (97%)
 
-Question #25Topic 1
+Question #25
+
 A company has multiple AWS accounts. The company uses AWS IAM Identity Center (AWS Single Sign-On) that is integrated with AWS Toolkit for Microsoft Azure DevOps. The attributes for access control feature is enabled in IAM Identity Center.
 
 The attribute mapping list contains two entries. The department key is mapped to ${path:enterprise.department}. The costCenter key is mapped to ${path:enterprise.costCenter}.
@@ -471,7 +480,8 @@ Correct Answer: C 🗳️ most voted
 Community vote distribution
 C (100%)
 
-Question #26Topic 1
+Question #26
+
 A company hosts a security auditing application in an AWS account. The auditing application uses an IAM role to access other AWS accounts. All the accounts are in the same organization in AWS Organizations.
 
 A recent security audit revealed that users in the audited AWS accounts could modify or delete the auditing application's IAM role. The company needs to prevent any modification to the auditing application's IAM role by any entity other than a trusted administrator IAM role.
@@ -490,7 +500,8 @@ Correct Answer: C 🗳️
 Community vote distribution
 A (89%)
 
-Question #27Topic 1
+Question #27
+
 A company has an on-premises application that is written in Go. A DevOps engineer must move the application to AWS. The company's development team wants to enable blue/green deployments and perform A/B testing.
 
 Which solution will meet these requirements?
@@ -507,7 +518,8 @@ Correct Answer: D 🗳️
 Community vote distribution
 D (100%)
 
-Question #28Topic 1
+Question #28
+
 A developer is maintaining a fleet of 50 Amazon EC2 Linux servers. The servers are part of an Amazon EC2 Auto Scaling group, and also use Elastic Load Balancing for load balancing.
 Occasionally, some application servers are being terminated after failing ELB HTTP health checks. The developer would like to perform a root cause analysis on the issue, but before being able to access application logs, the server is terminated.
 
@@ -525,7 +537,8 @@ Correct Answer: D 🗳️
 Community vote distribution
 D (89%)
 
-Question #29Topic 1
+Question #29
+
 A company has an organization in AWS Organizations. The organization includes workload accounts that contain enterprise applications. The company centrally manages users from an operations account. No users can be created in the workload accounts. The company recently added an operations team and must provide the operations team members with administrator access to each workload account.
 
 Which combination of actions will provide this access? (Choose three.)
@@ -546,7 +559,8 @@ Correct Answer: ABE 🗳️
 Community vote distribution
 BDE (94%)
 
-Question #30Topic 1
+Question #30
+
 A company has multiple accounts in an organization in AWS Organizations. The company's SecOps team needs to receive an Amazon Simple Notification Service (Amazon SNS) notification if any account in the organization turns off the Block Public Access feature on an Amazon S3 bucket. A DevOps engineer must implement this change without affecting the operation of any AWS accounts. The implementation must ensure that individual member accounts in the organization cannot turn off the notification.
 
 Which solution will meet these requirements?
@@ -565,7 +579,8 @@ C (48%)
 B (33%)
 A (19%)
 
-Question #31Topic 1
+Question #31
+
 A company has migrated its container-based applications to Amazon EKS and want to establish automated email notifications. The notifications sent to each email address are for specific activities related to EKS components. The solution will include Amazon SNS topics and an AWS Lambda function to evaluate incoming log events and publish messages to the correct SNS topic.
 
 Which logging solution will support these requirements?
@@ -582,7 +597,8 @@ Correct Answer: C 🗳️
 Community vote distribution
 A (95%)
 
-Question #32Topic 1
+Question #32
+
 A company is implementing an Amazon Elastic Container Service (Amazon ECS) cluster to run its workload. The company architecture will run multiple ECS services on the cluster. The architecture includes an Application Load Balancer on the front end and uses multiple target groups to route traffic.
 
 A DevOps engineer must collect application and access logs. The DevOps engineer then needs to send the logs to an Amazon S3 bucket for near-real-time analysis.
@@ -605,7 +621,8 @@ Correct Answer: BDE 🗳️
 Community vote distribution
 BDF (100%)
 
-Question #33Topic 1
+Question #33
+
 A company that uses electronic health records is running a fleet of Amazon EC2 instances with an Amazon Linux operating system. As part of patient privacy requirements, the company must ensure continuous compliance for patches for operating system and applications running on the EC2 instances.
 
 How can the deployments of the operating system and application patches be automated using a default and custom repository?
@@ -622,7 +639,8 @@ Correct Answer: A 🗳️
 Community vote distribution
 A (100%)
 
-Question #34Topic 1
+Question #34
+
 A company is using AWS CodePipeline to automate its release pipeline. AWS CodeDeploy is being used in the pipeline to deploy an application to Amazon Elastic Container Service (Amazon ECS) using the blue/green deployment model. The company wants to implement scripts to test the green version of the application before shifting traffic. These scripts will complete in 5 minutes or less. If errors are discovered during these tests, the application must be rolled back.
 
 Which strategy will meet these requirements?
@@ -639,7 +657,8 @@ Correct Answer: C 🗳️
 Community vote distribution
 C (100%)
 
-Question #35Topic 1
+Question #35
+
 A company uses AWS Storage Gateway in file gateway mode in front of an Amazon S3 bucket that is used by multiple resources. In the morning when business begins, users do not see the objects processed by a third party the previous evening. When a DevOps engineer looks directly at the S3 bucket, the data is there, but it is missing in Storage Gateway.
 Which solution ensures that all the updated third-party files are available in the morning?
 
@@ -656,7 +675,8 @@ Community vote distribution
 A (95%)
 5%
 
-Question #36Topic 1
+Question #36
+
 A DevOps engineer needs to back up sensitive Amazon S3 objects that are stored within an S3 bucket with a private bucket policy using S3 cross-Region replication functionality. The objects need to be copied to a target bucket in a different AWS Region and account.
 
 Which combination of actions should be performed to enable this replication? (Choose three.)
@@ -677,7 +697,8 @@ Correct Answer: ADE 🗳️
 Community vote distribution
 ADE (100%)
 
-Question #37Topic 1
+Question #37
+
 A company has multiple member accounts that are part of an organization in AWS Organizations. The security team needs to review every Amazon EC2 security group and their inbound and outbound rules. The security team wants to programmatically retrieve this information from the member accounts using an AWS Lambda function in the management account of the organization.
 
 Which combination of access changes will meet these requirements? (Choose three.)
@@ -700,7 +721,8 @@ BCE (73%)
 13%
 13%
 
-Question #38Topic 1
+Question #38
+
 A space exploration company receives telemetry data from multiple satellites. Small packets of data are received through Amazon API Gateway and are placed directly into an Amazon Simple Queue Service (Amazon SQS) standard queue. A custom application is subscribed to the queue and transforms the data into a standard format.
 
 Because of inconsistencies in the data that the satellites produce, the application is occasionally unable to transform the data. In these cases, the messages remain in the SQS queue. A DevOps engineer must develop a solution that retains the failed messages and makes them available to scientists for review and future processing.
@@ -719,7 +741,8 @@ Correct Answer: A 🗳️
 Community vote distribution
 C (100%)
 
-Question #39Topic 1
+Question #39
+
 A company wants to use AWS CloudFormation for infrastructure deployment. The company has strict tagging and resource requirements and wants to limit the deployment to two Regions. Developers will need to deploy multiple versions of the same application.
 
 Which solution ensures resources are deployed in accordance with company policy?
@@ -737,7 +760,8 @@ Community vote distribution
 D (75%)
 C (25%)
 
-Question #40Topic 1
+Question #40
+
 A company requires that its internally facing web application be highly available. The architecture is made up of one Amazon EC2 web server instance and one NAT instance that provides outbound internet access for updates and accessing public data.
 
 Which combination of architecture adjustments should the company implement to achieve high availability? (Choose two.)
@@ -757,7 +781,8 @@ Community vote distribution
 BD (78%)
 BE (22%)
 
-Question #41Topic 1
+Question #41
+
 A DevOps engineer is building a multistage pipeline with AWS CodePipeline to build, verify, stage, test, and deploy an application. A manual approval stage is required between the test stage and the deploy stage. The development team uses a custom chat tool with webhook support that requires near-real-time notifications.
 
 How should the DevOps engineer configure status updates for pipeline activity and approval requests to post to the chat tool?
@@ -774,7 +799,8 @@ Correct Answer: C 🗳️
 Community vote distribution
 C (100%)
 
-Question #42Topic 1
+Question #42
+
 A company's application development team uses Linux-based Amazon EC2 instances as bastion hosts. Inbound SSH access to the bastion hosts is restricted to specific IP addresses, as defined in the associated security groups. The company's security team wants to receive a notification if the security group rules are modified to allow SSH access from any IP address.
 What should a DevOps engineer do to meet this requirement?
 
@@ -791,7 +817,8 @@ Community vote distribution
 C (53%)
 A (47%)
 
-Question #43Topic 1
+Question #43
+
 A DevOps team manages an API running on-premises that serves as a backend for an Amazon API Gateway endpoint. Customers have been complaining about high response latencies, which the development team has verified using the API Gateway latency metrics in Amazon CloudWatch. To identify the cause, the team needs to collect relevant data without introducing additional latency.
 
 Which actions should be taken to accomplish this? (Choose two.)
@@ -811,7 +838,8 @@ Community vote distribution
 AC (83%)
 BE (17%)
 
-Question #44Topic 1
+Question #44
+
 A company has an application that is using a MySQL-compatible Amazon Aurora Multi-AZ DB cluster as the database. A cross-Region read replica has been created for disaster recovery purposes. A DevOps engineer wants to automate the promotion of the replica so it becomes the primary database instance in the event of a failure.
 Which solution will accomplish this?
 
@@ -827,7 +855,8 @@ Correct Answer: D 🗳️
 Community vote distribution
 D (100%)
 
-Question #45Topic 1
+Question #45
+
 A company hosts its staging website using an Amazon EC2 instance backed with Amazon EBS storage. The company wants to recover quickly with minimal data losses in the event of network connectivity issues or power failures on the EC2 instance.
 Which solution will meet these requirements?
 
@@ -844,7 +873,8 @@ Community vote distribution
 C (92%)
 4%
 
-Question #46Topic 1
+Question #46
+
 A company wants to use AWS development tools to replace its current bash deployment scripts. The company currently deploys a LAMP application to a group of Amazon EC2 instances behind an Application Load Balancer (ALB). During the deployments, the company unit tests the committed application, stops and starts services, unregisters and re-registers instances with the load balancer, and updates file permissions. The company wants to maintain the same deployment functionality through the shift to using AWS services.
 Which solution will meet these requirements?
 
@@ -861,7 +891,8 @@ Community vote distribution
 D (85%)
 A (15%)
 
-Question #47Topic 1
+Question #47
+
 A company runs an application with an Amazon EC2 and on-premises configuration. A DevOps engineer needs to standardize patching across both environments. Company policy dictates that patching only happens during non-business hours.
 
 Which combination of actions will meet these requirements? (Choose three.)
@@ -883,7 +914,8 @@ Community vote distribution
 ABF (91%)
 9%
 
-Question #48Topic 1
+Question #48
+
 A company has chosen AWS to host a new application. The company needs to implement a multi-account strategy. A DevOps engineer creates a new AWS account and an organization in AWS Organizations. The DevOps engineer also creates the OU structure for the organization and sets up a landing zone by using AWS Control Tower.
 
 The DevOps engineer must implement a solution that automatically deploys resources for new accounts that users create through AWS Control Tower Account Factory. When a user creates a new account, the solution must apply AWS CloudFormation templates and SCPs that are customized for the OU or the account to automatically deploy all the resources that are attached to the account. All the OUs are enrolled in AWS Control Tower.
@@ -903,7 +935,8 @@ Community vote distribution
 D (92%)
 8%
 
-Question #49Topic 1
+Question #49
+
 An online retail company based in the United States plans to expand its operations to Europe and Asia in the next six months. Its product currently runs on Amazon EC2 instances behind an Application Load Balancer. The instances run in an Amazon EC2 Auto Scaling group across multiple Availability Zones. All data is stored in an Amazon Aurora database instance.
 When the product is deployed in multiple regions, the company wants a single product catalog across all regions, but for compliance purposes, its customer information and purchases must be kept in each region.
 
@@ -921,7 +954,8 @@ Correct Answer: C 🗳️
 Community vote distribution
 C (100%)
 
-Question #50Topic 1
+Question #50
+
 A company is implementing a well-architected design for its globally accessible API stack. The design needs to ensure both high reliability and fast response times for users located in North America and Europe.
 
 The API stack contains the following three tiers:
@@ -946,7 +980,8 @@ Correct Answer: B 🗳️
 Community vote distribution
 B (100%)
 
-Question #51Topic 1
+Question #51
+
 A rapidly growing company wants to scale for developer demand for AWS development environments. Development environments are created manually in the AWS Management Console. The networking team uses AWS CloudFormation to manage the networking infrastructure, exporting stack output values for the Amazon VPC and all subnets. The development environments have common standards, such as Application Load Balancers, Amazon EC2 Auto Scaling groups, security groups, and Amazon DynamoDB tables.
 
 To keep up with demand, the DevOps engineer wants to automate the creation of development environments. Because the infrastructure required to support the application is expected to grow, there must be a way to easily update the deployed infrastructure. CloudFormation will be used to create a template for the development environments.
@@ -966,7 +1001,8 @@ Community vote distribution
 C (62%)
 B (38%)
 
-Question #52Topic 1
+Question #52
+
 A company uses AWS Organizations to manage multiple accounts. Information security policies require that all unencrypted Amazon EBS volumes be marked as non-compliant. A DevOps engineer needs to automatically deploy the solution and ensure that this compliance check is always present.
 
 Which solution will accomplish this?
@@ -983,7 +1019,8 @@ Correct Answer: B 🗳️
 Community vote distribution
 B (100%)
 
-Question #53Topic 1
+Question #53
+
 A company is performing vulnerability scanning for all Amazon EC2 instances across many accounts. The accounts are in an organization in AWS Organizations. Each account's VPCs are attached to a shared transit gateway. The VPCs send traffic to the internet through a central egress VPC. The company has enabled Amazon Inspector in a delegated administrator account and has enabled scanning for all member accounts.
 
 A DevOps engineer discovers that some EC2 instances are listed in the "not scanning" tab in Amazon Inspector.
@@ -1006,7 +1043,8 @@ Correct Answer: ABC 🗳️
 Community vote distribution
 ABE (100%)
 
-Question #54Topic 1
+Question #54
+
 A development team uses AWS CodeCommit for version control for applications. The development team uses AWS CodePipeline, AWS CodeBuild. and AWS CodeDeploy for CI/CD infrastructure. In CodeCommit, the development team recently merged pull requests that did not pass long-running tests in the code base. The development team needed to perform rollbacks to branches in the codebase, resulting in lost time and wasted effort.
 
 A DevOps engineer must automate testing of pull requests in CodeCommit to ensure that reviewers more easily see the results of automated tests as part of the pull request review.
@@ -1026,7 +1064,8 @@ C (58%)
 B (21%)
 D (21%)
 
-Question #55Topic 1
+Question #55
+
 A company has deployed an application in a production VPC in a single AWS account. The application is popular and is experiencing heavy usage. The company’s security team wants to add additional security, such as AWS WAF, to the application deployment. However, the application's product manager is concerned about cost and does not want to approve the change unless the security team can prove that additional security is necessary.
 
 The security team believes that some of the application's demand might come from users that have IP addresses that are on a deny list. The security team provides the deny list to a DevOps engineer. If any of the IP addresses on the deny list access the application, the security team wants to receive automated notification in near real time so that the security team can document that the application needs additional security. The DevOps engineer creates a VPC flow log for the production VPC.
@@ -1045,7 +1084,7 @@ Correct Answer: A 🗳️
 Community vote distribution
 A (100%)
 
-Question #56Topic 1
+Question #56
 
 A DevOps engineer has automated a web service deployment by using AWS CodePipeline with the following steps:
 
@@ -1074,7 +1113,8 @@ Community vote distribution
 AE (67%)
 AD (33%)
 
-Question #57Topic 1
+Question #57
+
 A company is hosting a web application in an AWS Region. For disaster recovery purposes, a second region is being used as a standby. Disaster recovery requirements state that session data must be replicated between regions in near-real time and 1% of requests should route to the secondary region to continuously verify system functionality. Additionally, if there is a disruption in service in the main region, traffic should be automatically routed to the secondary region, and the secondary region must be able to scale up to handle all traffic.
 How should a DevOps engineer meet these requirements?
 
@@ -1091,10 +1131,12 @@ Community vote distribution
 A (69%)
 D (31%)
 
-Question #58Topic 1
+Question #58
+
 A company runs an application on Amazon EC2 instances. The company uses a series of AWS CloudFormation stacks to define the application resources. A developer performs updates by building and testing the application on a laptop and then uploading the build output and CloudFormation stack templates to Amazon S3. The developer's peers review the changes before the developer performs the CloudFormation stack update and installs a new version of the application onto the EC2 instances.
 
 The deployment process is prone to errors and is time-consuming when the developer updates each EC2 instance with the new application. The company wants to automate as much of the application deployment process as possible while retaining a final manual approval step before the modification of the application or resources.
+
 The company already has moved the source code for the application and the CloudFormation templates to AWS CodeCommit. The company also has created an AWS CodeBuild project to build and test the application.
 
 Which combination of steps will meet the company’s requirements? (Choose two.)
@@ -1114,7 +1156,8 @@ Community vote distribution
 AD (63%)
 BD (38%)
 
-Question #59Topic 1
+Question #59
+
 A DevOps engineer manages a web application that runs on Amazon EC2 instances behind an Application Load Balancer (ALB). The instances run in an EC2 Auto Scaling group across multiple Availability Zones. The engineer needs to implement a deployment strategy that:
 
 Launches a second fleet of instances with the same capacity as the original fleet.
@@ -1139,7 +1182,8 @@ Correct Answer: C 🗳️
 Community vote distribution
 C (100%)
 
-Question #60Topic 1
+Question #60
+
 A video-sharing company stores its videos in Amazon S3. The company has observed a sudden increase in video access requests, but the company does not know which videos are most popular. The company needs to identify the general access pattern for the video files. This pattern includes the number of users who access a certain file on a given day, as well as the number of pull requests for certain files.
 
 How can the company meet these requirements with the LEAST amount of effort?
@@ -1156,7 +1200,8 @@ Correct Answer: B 🗳️
 Community vote distribution
 B (100%)
 
-Question #61Topic 1
+Question #61
+
 A development team wants to use AWS CloudFormation stacks to deploy an application. However, the developer IAM role does not have the required permissions to provision the resources that are specified in the AWS CloudFormation template. A DevOps engineer needs to implement a solution that allows the developers to deploy the stacks. The solution must follow the principle of least privilege.
 
 Which solution will meet these requirements?
@@ -1175,7 +1220,8 @@ D (79%)
 14%
 7%
 
-Question #62Topic 1
+Question #62
+
 A production account has a requirement that any Amazon EC2 instance that has been logged in to manually must be terminated within 24 hours. All applications in the production account are using Auto Scaling groups with the Amazon CloudWatch Logs agent configured.
 
 How can this process be automated?
@@ -1192,7 +1238,8 @@ Correct Answer: D 🗳️
 Community vote distribution
 D (100%)
 
-Question #63Topic 1
+Question #63
+
 A company has enabled all features for its organization in AWS Organizations. The organization contains 10 AWS accounts. The company has turned on AWS CloudTrail in all the accounts. The company expects the number of AWS accounts in the organization to increase to 500 during the next year. The company plans to use multiple OUs for these accounts.
 
 The company has enabled AWS Config in each existing AWS account in the organization. A DevOps engineer must implement a solution that enables AWS Config automatically for all future AWS accounts that are created in the organization.
@@ -1211,7 +1258,8 @@ Correct Answer: B 🗳️
 Community vote distribution
 B (100%)
 
-Question #64Topic 1
+Question #64
+
 A company has many applications. Different teams in the company developed the applications by using multiple languages and frameworks. The applications run on premises and on different servers with different operating systems. Each team has its own release protocol and process. The company wants to reduce the complexity of the release and maintenance of these applications.
 
 The company is migrating its technology stacks, including these applications, to AWS. The company wants centralized control of source code, a consistent and automatic delivery pipeline, and as few maintenance tasks as possible on the underlying infrastructure.
@@ -1231,7 +1279,8 @@ Community vote distribution
 D (92%)
 8%
 
-Question #65Topic 1
+Question #65
+
 A company's application is currently deployed to a single AWS Region. Recently, the company opened a new office on a different continent. The users in the new office are experiencing high latency. The company's application runs on Amazon EC2 instances behind an Application Load Balancer (ALB) and uses Amazon DynamoDB as the database layer. The instances run in an EC2 Auto Scaling group across multiple Availability Zones. A DevOps engineer is tasked with minimizing application response times and improving availability for users in both Regions.
 Which combination of actions should be taken to address the latency issues? (Choose three.)
 
@@ -1251,7 +1300,8 @@ Correct Answer: CDF 🗳️
 Community vote distribution
 CDF (100%)
 
-Question #66Topic 1
+Question #66
+
 A DevOps engineer needs to apply a core set of security controls to an existing set of AWS accounts. The accounts are in an organization in AWS Organizations. Individual teams will administer individual accounts by using the AdministratorAccess AWS managed policy. For all accounts. AWS CloudTrail and AWS Config must be turned on in all available AWS Regions. Individual account administrators must not be able to edit or delete any of the baseline resources. However, individual account administrators must be able to edit or delete their own CloudTrail trails and AWS Config rules.
 
 Which solution will meet these requirements in the MOST operationally efficient way?
@@ -1270,7 +1320,8 @@ D (50%)
 C (47%)
 3%
 
-Question #67Topic 1
+Question #67
+
 A company has its AWS accounts in an organization in AWS Organizations. AWS Config is manually configured in each AWS account. The company needs to implement a solution to centrally configure AWS Config for all accounts in the organization The solution also must record resource changes to a central account.
 
 Which combination of actions should a DevOps engineer perform to meet these requirements? (Choose two.)
@@ -1290,7 +1341,8 @@ Community vote distribution
 AE (79%)
 BD (21%)
 
-Question #68Topic 1
+Question #68
+
 A company wants to migrate its content sharing web application hosted on Amazon EC2 to a serverless architecture. The company currently deploys changes to its application by creating a new Auto Scaling group of EC2 instances and a new Elastic Load Balancer, and then shifting the traffic away using an Amazon Route 53 weighted routing policy.
 
 For its new serverless application, the company is planning to use Amazon API Gateway and AWS Lambda. The company will need to update its deployment processes to work with the new application. It will also need to retain the ability to test new features on a small number of users before rolling the features out to the entire user base.
@@ -1309,7 +1361,8 @@ Correct Answer: B 🗳️
 Community vote distribution
 B (100%)
 
-Question #69Topic 1
+Question #69
+
 A development team uses AWS CodeCommit, AWS CodePipeline, and AWS CodeBuild to develop and deploy an application. Changes to the code are submitted by pull requests. The development team reviews and merges the pull requests, and then the pipeline builds and tests the application.
 
 Over time, the number of pull requests has increased. The pipeline is frequently blocked because of failing tests. To prevent this blockage, the development team wants to run the unit and integration tests on each pull request before it is merged.
@@ -1330,7 +1383,8 @@ Community vote distribution
 B (81%)
 Other
 
-Question #70Topic 1
+Question #70
+
 A company has an application that runs on a fleet of Amazon EC2 instances. The application requires frequent restarts. The application logs contain error messages when a restart is required. The application logs are published to a log group in Amazon CloudWatch Logs.
 
 An Amazon CloudWatch alarm notifies an application engineer through an Amazon Simple Notification Service (Amazon SNS) topic when the logs contain a large number of restart-related error messages. The application engineer manually restarts the application on the instances after the application engineer receives a notification from the SNS topic.
@@ -1353,7 +1407,8 @@ D (63%)
 C (23%)
 13%
 
-Question #71Topic 1
+Question #71
+
 A DevOps engineer at a company is supporting an AWS environment in which all users use AWS IAM Identity Center (AWS Single Sign-On). The company wants to immediately disable credentials of any new IAM user and wants the security team to receive a notification.
 
 Which combination of steps should the DevOps engineer take to meet these requirements? (Choose three.)
@@ -1374,7 +1429,8 @@ Correct Answer: ACE 🗳️
 Community vote distribution
 ACE (100%)
 
-Question #72Topic 1
+Question #72
+
 A company wants to set up a continuous delivery pipeline. The company stores application code in a private GitHub repository. The company needs to deploy the application components to Amazon Elastic Container Service (Amazon ECS). Amazon EC2, and AWS Lambda. The pipeline must support manual approval actions.
 Which solution will meet these requirements?
 
@@ -1391,7 +1447,8 @@ Community vote distribution
 B (87%)
 7%
 
-Question #73Topic 1
+Question #73
+
 A company has an application that runs on Amazon EC2 instances that are in an Auto Scaling group. When the application starts up. the application needs to process data from an Amazon S3 bucket before the application can start to serve requests.
 
 The size of the data that is stored in the S3 bucket is growing. When the Auto Scaling group adds new instances, the application now takes several minutes to download and process the data before the application can serve requests. The company must reduce the time that elapses before new EC2 instances are ready to serve requests.
@@ -1411,7 +1468,8 @@ Community vote distribution
 A (88%)
 12%
 
-Question #74Topic 1
+Question #74
+
 A company is using an AWS CodeBuild project to build and package an application. The packages are copied to a shared Amazon S3 bucket before being deployed across multiple AWS accounts.
 
 The buildspec.yml file contains the following:
@@ -1435,7 +1493,8 @@ Community vote distribution
 D (77%)
 A (23%)
 
-Question #75Topic 1
+Question #75
+
 A company has developed a serverless web application that is hosted on AWS. The application consists of Amazon S3. Amazon API Gateway, several AWS Lambda functions, and an Amazon RDS for MySQL database. The company is using AWS CodeCommit to store the source code. The source code is a combination of AWS Serverless Application Model (AWS SAM) templates and Python code.
 
 A security audit and penetration test reveal that user names and passwords for authentication to the database are hardcoded within CodeCommit repositories. A DevOps engineer must implement a solution to automatically detect and prevent hardcoded secrets.
@@ -1451,12 +1510,11 @@ C. Enable Amazon CodeGuru Profiler. Decorate the handler function with @with_lam
 D. Associate the CodeCommit repository with Amazon CodeGuru Reviewer. Manually check the code review for any recommendations. Write the secret to AWS Systems Manager Parameter Store as a string. Update the SAM templates and the Python code to pull the secret from Parameter Store.
  
 Correct Answer: B -
-🗳️
 Community vote distribution
 B (93%)
-7%
 
-Question #76Topic 1
+Question #76
+
 A company is using Amazon S3 buckets to store important documents. The company discovers that some S3 buckets are not encrypted. Currently, the company’s IAM users can create new S3 buckets without encryption. The company is implementing a new requirement that all S3 buckets must be encrypted.
 
 A DevOps engineer must implement a solution to ensure that server-side encryption is enabled on all existing S3 buckets and all new S3 buckets. The encryption must be enabled on new S3 buckets as soon as the S3 buckets are created. The default encryption type must be 256-bit Advanced Encryption Standard (AES-256).
@@ -1474,9 +1532,9 @@ D. Configure an IAM policy that denies the s3:CreateBucket action if the s3:x-am
 Correct Answer: D 🗳️
 Community vote distribution
 B (93%)
-7%
 
-Question #77Topic 1
+Question #77
+
 A DevOps engineer is architecting a continuous development strategy for a company’s software as a service (SaaS) web application running on AWS. For application and security reasons, users subscribing to this application are distributed across multiple Application Load Balancers (ALBs), each of which has a dedicated Auto Scaling group and fleet of Amazon EC2 instances. The application does not require a build stage, and when it is committed to AWS CodeCommit, the application must trigger a simultaneous deployment to all ALBs, Auto Scaling groups, and EC2 fleets.
 
 Which architecture will meet these requirements with the LEAST amount of configuration?
@@ -1493,9 +1551,9 @@ D. Create an AWS CodePipeline pipeline for each ALB-Auto Scaling group pair that
 Correct Answer: C 🗳️
 Community vote distribution
 C (92%)
-8%
 
-Question #78Topic 1
+Question #78
+
 A company is hosting a static website from an Amazon S3 bucket. The website is available to customers at example.com. The company uses an Amazon Route 53 weighted routing policy with a TTL of 1 day. The company has decided to replace the existing static website with a dynamic web application. The dynamic web application uses an Application Load Balancer (ALB) in front of a fleet of Amazon EC2 instances.
 
 On the day of production launch to customers, the company creates an additional Route 53 weighted DNS record entry that points to the ALB with a weight of 255 and a TTL of 1 hour. Two days later, a DevOps engineer notices that the previous static website is displayed sometimes when customers navigate to example.com.
@@ -1515,7 +1573,8 @@ Community vote distribution
 D (72%)
 B (28%)
 
-Question #79Topic 1
+Question #79
+
 A company is implementing AWS CodePipeline to automate its testing process. The company wants to be notified when the execution state fails and used the following custom event pattern in Amazon EventBridge:
 
 ![image](https://github.com/narsingrao-bot/DUMP/assets/59975179/0ebd7a8a-c5d7-4e75-a1fb-c99623e2e7ad)
@@ -1535,7 +1594,8 @@ Correct Answer: B 🗳️
 Community vote distribution
 B (100%)
 
-Question #80Topic 1
+Question #80
+
 An application running on a set of Amazon EC2 instances in an Auto Scaling group requires a configuration file to operate. The instances are created and maintained with AWS CloudFormation. A DevOps engineer wants the instances to have the latest configuration file when launched, and wants changes to the configuration file to be reflected on all the instances with a minimal delay when the CloudFormation template is updated. Company policy requires that application configuration files be maintained along with AWS infrastructure configuration files in source control.
 
 Which solution will accomplish this?
@@ -1553,7 +1613,8 @@ Community vote distribution
 D (63%)
 B (38%)
 
-Question #81Topic 1
+Question #81
+
 A company manages an application that stores logs in Amazon CloudWatch Logs. The company wants to archive the logs to an Amazon S3 bucket. Logs are rarely accessed after 90 days and must be retained for 10 years.
 
 Which combination of steps should a DevOps engineer take to meet these requirements? (Choose two.)
@@ -1572,7 +1633,8 @@ Correct Answer: BD 🗳️
 Community vote distribution
 BD (92%)
 
-Question #82Topic 1
+Question #82
+
 A company is developing a new application. The application uses AWS Lambda functions for its compute tier. The company must use a canary deployment for any changes to the Lambda functions. Automated rollback must occur if any failures are reported.
 
 The company’s DevOps team needs to create the infrastructure as code (IaC) and the CI/CD pipeline for this solution.
@@ -1596,7 +1658,8 @@ Community vote distribution
 BCF (83%)
 BCE (17%)
 
-Question #83Topic 1
+Question #83
+
 A DevOps engineer is deploying a new version of a company’s application in an AWS CodeDeploy deployment group associated with its Amazon EC2 instances. After some time, the deployment fails. The engineer realizes that all the events associated with the specific deployment ID are in a Skipped status, and code was not deployed in the instances associated with the deployment group.
 
 What are valid reasons for this failure? (Choose two.)
@@ -1615,7 +1678,8 @@ Correct Answer: AD 🗳️
 Community vote distribution
 AD (89%)
 
-Question #84Topic 1
+Question #84
+
 A company has a guideline that every Amazon EC2 instance must be launched from an AMI that the company’s security team produces. Every month, the security team sends an email message with the latest approved AMIs to all the development teams.
 
 The development teams use AWS CloudFormation to deploy their applications. When developers launch a new service, they have to search their email for the latest AMIs that the security department sent. A DevOps engineer wants to automate the process that the security team uses to provide the AMI IDs to the development teams.
@@ -1634,7 +1698,8 @@ Correct Answer: C 🗳️
 Community vote distribution
 C (100%)
 
-Question #85Topic 1
+Question #85
+
 An application runs on Amazon EC2 instances behind an Application Load Balancer (ALB). A DevOps engineer is using AWS CodeDeploy to release a new version. The deployment fails during the AllowTraffic lifecycle event, but a cause for the failure is not indicated in the deployment logs.
 
 What would cause this?
@@ -1651,7 +1716,8 @@ Correct Answer: C 🗳️
 Community vote distribution
 C (100%)
 
-Question #86Topic 1
+Question #86
+
 A company has 20 service teams. Each service team is responsible for its own microservice. Each service team uses a separate AWS account for its microservice and a VPC with the 192.168.0.0/22 CIDR block. The company manages the AWS accounts with AWS Organizations.
 
 Each service team hosts its microservice on multiple Amazon EC2 instances behind an Application Load Balancer. The microservices communicate with each other across the public internet. The company’s security team has issued a new guideline that all communication between microservices must use HTTPS over private network connections and cannot traverse the public internet.
@@ -1674,7 +1740,8 @@ Community vote distribution
 B (73%)
 D (27%)
 
-Question #87Topic 1
+Question #87
+
 An Amazon EC2 instance is running in a VPC and needs to download an object from a restricted Amazon S3 bucket. When the DevOps engineer tries to download the object, an AccessDenied error is received.
 
 What are the possible causes for this error? (Choose two.)
@@ -1693,7 +1760,8 @@ Correct Answer: BD 🗳️
 Community vote distribution
 BD (100%)
 
-Question #88Topic 1
+Question #8
+
 A company wants to use a grid system for a proprietary enterprise in-memory data store on top of AWS. This system can run in multiple server nodes in any Linux-based distribution. The system must be able to reconfigure the entire cluster every time a node is added or removed. When adding or removing nodes, an /etc/cluster/nodes.config file must be updated, listing the IP addresses of the current node members of that cluster.
 
 The company wants to automate the task of adding new nodes to a cluster.
@@ -1712,7 +1780,8 @@ Correct Answer: A 🗳️
 Community vote distribution
 A (100%)
 
-Question #89Topic 1
+Question #89
+
 A DevOps engineer is working on a data archival project that requires the migration of on-premises data to an Amazon S3 bucket. The DevOps engineer develops a script that incrementally archives on-premises data that is older than 1 month to Amazon S3. Data that is transferred to Amazon S3 is deleted from the on-premises location. The script uses the S3 PutObject operation.
 
 During a code review, the DevOps engineer notices that the script does not verify whether the data was successfully copied to Amazon S3. The DevOps engineer must update the script to ensure that data is not corrupted during transmission. The script must use MD5 checksums to verify data integrity before the on-premises data is deleted.
@@ -1733,7 +1802,8 @@ Correct Answer: BD 🗳️
 Community vote distribution
 BD (100%)
 
-Question #90Topic 1
+Question #90
+
 A company deploys updates to its Amazon API Gateway API several times a week by using an AWS CodePipeline pipeline. As part of the update process, the company exports the JavaScript SDK for the API from the API Gateway console and uploads the SDK to an Amazon S3 bucket.
 
 The company has configured an Amazon CloudFront distribution that uses the S3 bucket as an origin. Web clients then download the SDK by using the CloudFront distribution’s endpoint. A DevOps engineer needs to implement a solution to make the new SDK available automatically during new API deployments.
@@ -1752,7 +1822,8 @@ Correct Answer: A 🗳️
 Community vote distribution
 A (100%)
 
-Question #91Topic 1
+Question #91
+
 A company has developed an AWS Lambda function that handles orders received through an API. The company is using AWS CodeDeploy to deploy the Lambda function as the final stage of a CI/CD pipeline.
 
 A DevOps engineer has noticed there are intermittent failures of the ordering API for a few seconds after deployment. After some investigation, the DevOps engineer believes the failures are due to database changes not having fully propagated before the Lambda function is invoked.
@@ -1771,7 +1842,8 @@ Correct Answer: A 🗳️
 Community vote distribution
 A (100%)
 
-Question #92Topic 1
+Question #92
+
 A company uses a single AWS account to test applications on Amazon EC2 instances. The company has turned on AWS Config in the AWS account and has activated the restricted-ssh AWS Config managed rule.
 
 The company needs an automated monitoring solution that will provide a customized notification in real time if any security group in the account is not compliant with the restricted-ssh rule. The customized notification must contain the name and ID of the noncompliant security group.
@@ -1792,7 +1864,8 @@ Correct Answer: A 🗳️
 Community vote distribution
 A (100%)
 
-Question #93Topic 1
+Question #93
+
 A company requires an RPO of 2 hours and an RTO of 10 minutes for its data and application at all times. An application uses a MySQL database and Amazon EC2 web servers. The development team needs a strategy for failover and disaster recovery.
 
 Which combination of deployment strategies will meet these requirements? (Choose two.)
@@ -1811,7 +1884,8 @@ Correct Answer: BD 🗳️
 Community vote distribution
 BD (100%)
 
-Question #94Topic 1
+Question #94
+
 A business has an application that consists of five independent AWS Lambda functions.
 
 The DevOps engineer has built a CI/CD pipeline using AWS CodePipeline and AWS CodeBuild that builds, tests, packages, and deploys each Lambda function in sequence. The pipeline uses an Amazon EventBridge rule to ensure the pipeline starts as quickly as possible after a change is made to the application source code.
@@ -1828,7 +1902,8 @@ C. Modify the CodePipeline configuration to run actions for each Lambda function
 
 D. Modify each CodeBuild project to run within a VPC and use dedicated instances to increase throughput.
  
-Question #95Topic 1
+Question #95
+
 A company uses AWS CloudFormation stacks to deploy updates to its application. The stacks consist of different resources. The resources include AWS Auto Scaling groups, Amazon EC2 instances, Application Load Balancers (ALBs), and other resources that are necessary to launch and maintain independent stacks. Changes to application resources outside of CloudFormation stack updates are not allowed.
 
 The company recently attempted to update the application stack by using the AWS CLI. The stack failed to update and produced the following error message: “ERROR: both the deployment and the CloudFormation stack rollback failed. The deployment failed because the following resource(s) failed to update: [AutoScalingGroup].”
@@ -1849,7 +1924,8 @@ Correct Answer: B 🗳️
 Community vote distribution
 B (100%)
 
-Question #96Topic 1
+Question #96
+
 A company is deploying a new application that uses Amazon EC2 instances. The company needs a solution to query application logs and AWS account API activity.
 
 Which solution will meet these requirements?
@@ -1866,7 +1942,8 @@ Correct Answer: B 🗳️
 Community vote distribution
 B (100%)
 
-Question #97Topic 1
+Question #97
+
 A company wants to ensure that their EC2 instances are secure. They want to be notified if any new vulnerabilities are discovered on their instances, and they also want an audit trail of all login activities on the instances.
 
 Which solution will meet these requirements?
@@ -1883,7 +1960,8 @@ Correct Answer: D 🗳️
 Community vote distribution
 D (100%)
 
-Question #98Topic 1
+Question #98
+
 A company is running an application on Amazon EC2 instances in an Auto Scaling group. Recently, an issue occurred that prevented EC2 instances from launching successfully, and it took several hours for the support team to discover the issue. The support team wants to be notified by email whenever an EC2 instance does not start successfully.
 
 Which action will accomplish this?
@@ -1900,7 +1978,8 @@ Correct Answer: B 🗳️
 Community vote distribution
 B (100%)
 
-Question #99Topic 1
+Question #99
+
 A company is using AWS Organizations to centrally manage its AWS accounts. The company has turned on AWS Config in each member account by using AWS CloudFormation StackSets. The company has configured trusted access in Organizations for AWS Config and has configured a member account as a delegated administrator account for AWS Config.
 
 A DevOps engineer needs to implement a new security policy. The policy must require all current and future AWS member accounts to use a common baseline of AWS Config rules that contain remediation actions that are managed from a central account. Non-administrator users who can access member accounts must not be able to modify this common baseline of AWS Config rules that are deployed into each member account.
@@ -1914,7 +1993,8 @@ B. Create an AWS Config conformance pack that contains the AWS Config rules and 
 C. Create a CloudFormation template that contains the AWS Config rules and remediation actions. Deploy the template from the delegated administrator account by using AWS Config.
 D. Create an AWS Config conformance pack that contains the AWS Config rules and remediation actions. Deploy the pack from the delegated administrator account by using AWS Config.
 
-Question #100Topic 1
+Question #100
+
 A DevOps engineer manages a large commercial website that runs on Amazon EC2. The website uses Amazon Kinesis Data Streams to collect and process web logs. The DevOps engineer manages the Kinesis consumer application, which also runs on Amazon EC2.
 
 Sudden increases of data cause the Kinesis consumer application to fall behind, and the Kinesis data streams drop records before the records can be processed. The DevOps engineer must implement a solution to improve stream handling.
