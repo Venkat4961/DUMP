@@ -15,6 +15,7 @@ Which additional set of actions should the DevOps engineer take to gather the re
 
     Hide Solution    Discussion   43
     Correct Answer: A 🗳️  A (95%)
+    
 Question #2
 
 A company provides an application to customers. The application has an Amazon API Gateway REST API that invokes an AWS Lambda function. On initialization, the Lambda function loads a large amount of data from an Amazon DynamoDB table. The data load process results in long cold-start times of 8-10 seconds. The DynamoDB table has DynamoDB Accelerator (DAX) configured.
